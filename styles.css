@@ -63,7 +63,7 @@ a {
 }
 
 .lang-btn {
-    padding: 8px 16px;
+    padding: 8px 12px;
     border: none;
     background: transparent;
     color: var(--text-dark);
@@ -71,17 +71,18 @@ a {
     cursor: pointer;
     border-radius: 20px;
     transition: var(--transition);
-    font-size: 14px;
+    font-size: 20px;
+    line-height: 1;
 }
 
 .lang-btn.active {
     background: var(--primary-color);
-    color: var(--white);
+    transform: scale(1.05);
 }
 
 .lang-btn:hover {
-    background: var(--primary-color);
-    color: var(--white);
+    background: rgba(212, 175, 55, 0.2);
+    transform: scale(1.1);
 }
 
 /* Header */
