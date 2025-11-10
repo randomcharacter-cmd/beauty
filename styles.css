@@ -51,9 +51,9 @@ a {
 /* Language Toggle */
 .language-toggle {
     position: fixed;
-    top: 20px;
+    top: 90px;
     right: 20px;
-    z-index: 1000;
+    z-index: 1001;
     display: flex;
     gap: 5px;
     background: var(--white);
@@ -419,6 +419,10 @@ section {
 
 /* Responsive Design */
 @media (max-width: 968px) {
+    .language-toggle {
+        top: 130px;
+    }
+
     .header .container {
         flex-direction: column;
         gap: 15px;
@@ -483,7 +487,7 @@ section {
 
 @media (max-width: 600px) {
     .language-toggle {
-        top: 10px;
+        top: 145px;
         right: 10px;
     }
 
