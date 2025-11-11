@@ -25,3 +25,9 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
+
+# Re-include website assets inside images/
+
+# Re-include website assets inside images/
+!images/
+!images/**
