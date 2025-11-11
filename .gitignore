@@ -1,0 +1,27 @@
+# Images - download locally using download-images.sh or download-images.bat
+# Exclude image files but keep the README
+images/*.jpg
+images/*.jpeg
+images/*.png
+images/*.gif
+images/*.webp
+images/gallery/*.jpg
+images/gallery/*.jpeg
+images/gallery/*.png
+images/gallery/*.gif
+images/gallery/*.webp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*

@@ -27,8 +27,9 @@ A professional, modern, and fully responsive website for Arte de Belleza beauty 
 
 1. **Image Optimization**:
    - Lazy loading with native browser support
-   - Responsive images from Unsplash CDN
+   - Locally stored, optimized JPEG images (quality 85%)
    - Content-visibility CSS property
+   - Total image size: ~3-5 MB (all images combined)
 
 2. **CSS Optimizations**:
    - Mobile-first approach
@@ -44,13 +45,41 @@ A professional, modern, and fully responsive website for Arte de Belleza beauty 
 
 ```
 beauty/
-├── index.html          # Main HTML file
-├── styles.css          # All styling
-├── script.js           # Language switching and interactions
-└── README.md           # This file
+├── index.html              # Main HTML file
+├── styles.css              # All styling
+├── script.js               # Language switching and interactions
+├── download-images.sh      # Image download script (Linux/Mac)
+├── download-images.bat     # Image download script (Windows)
+├── manifest.json           # PWA manifest
+├── images/                 # Image directory (download required)
+│   ├── README.md          # Image instructions
+│   ├── hero.jpg           # Hero section image
+│   ├── about.jpg          # About section image
+│   └── gallery/           # Gallery images
+└── README.md              # This file
 ```
 
-## Local Development
+## Setup Instructions
+
+### 1. Download Images
+
+**IMPORTANT**: Before opening the website, you need to download the optimized images.
+
+**On Linux/Mac:**
+```bash
+chmod +x download-images.sh
+./download-images.sh
+```
+
+**On Windows:**
+Double-click `download-images.bat` or run:
+```batch
+download-images.bat
+```
+
+This will download all optimized images (~3-5 MB total) to the `images/` directory.
+
+### 2. Open the Website
 
 Simply open `index.html` in a modern web browser. No build process required.
 
